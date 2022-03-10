@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&family=Poppins:wght@100&family=Source+Sans+Pro:wght@300&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+  font-family: 'Neucha', cursive;
+  background-color: #fff;
+}
+.main{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(230, 230, 230);
+  padding: 100px 0;
+}
+.main h1{
+  font-size: 40px;
+  font-weight: normal;
+  color: #444;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.ul__wrap{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main ul{
+  display: flex;
+}
+.main ul li{
+  list-style-type: none;
+  width: 80px;
+  height: 80px;
+  background-color: rgb(230, 230, 230);
+  margin: 0 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+  box-shadow: 9px 9px 15px rgba(0, 0, 0, 0.299),
+              -7px -7px 10px rgba(255, 255, 255, .8);
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+}
+
+ul li a{
+  font-size: 40px;
+  color: #444;
+  transition: all .4s ease-in-out;
+}
+
+.main ul li:hover{
+  box-shadow: inset 7px 7px 8px rgba(0, 0, 0, 0.299),
+              inset -5px -5px 6px rgba(255, 255, 255, .8);
+}
+.main ul li:hover a{
+  transform: translateY(3px);
+  font-size: 37px;
+}
+
+ul li:hover .fa-facebook{
+  color: #3b5998;
+}
+ul li:hover .fa-instagram{
+  color: #c32a6a;
+}
+ul li:hover .fa-twitter{
+  color: #55acee;
+}
+ul li:hover .fa-whatsapp{
+  color: #00cf18;
+}
+ul li:hover .fa-youtube{
+  color: #cd201f;
+}
+
+
+
+
+/* @media (max-width: 1024px){
+  .testimonials{
+    padding: 50px 7%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .container .box{
+    margin-bottom: 30px; 
+  }
+} */
+@media (max-width: 667px){
+  .main ul li{
+    margin: 0 15px;
+  }
+}
+@media (max-width: 425px){
+  .main ul li{
+    width: 50px;
+    height: 50px;
+  }
+}
+@media (max-width: 375px){
+  .main ul li {
+    margin: 0 10px;
+  }
+  ul li a {
+    font-size: 30px;
+  }
+}
+@media (max-width: 320px){
+  .main ul li{
+    width: 40px;
+    height: 40px;
+  }
+}
